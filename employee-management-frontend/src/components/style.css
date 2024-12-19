@@ -1,0 +1,153 @@
+/* General Form Styling */
+form {
+  width: 50%;
+  margin: auto;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Header */
+form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Add "Add Employee" header centered in the middle */
+form h2:before {
+  content: "Add Employee";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+  width: 80%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Highlight invalid and required fields in red */
+form input:required:invalid,
+form select:required:invalid,
+form textarea:required:invalid {
+  border-color: red;
+  box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.6);
+}
+
+form input:required:valid,
+form select:required:valid,
+form textarea:required:valid {
+  border-color: green;
+  box-shadow: 0px 0px 8px rgba(0, 255, 0, 0.6);
+}
+
+/* Form Inputs - Focus State */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.8);
+  outline: none;
+}
+
+/* Form Buttons */
+form .btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+form input[type="date"] {
+  width: 80%;
+  padding: 1rem; /* Increased padding */
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1.2rem; /* Increased font size */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Submit Button */
+form .btn-submit {
+  background: linear-gradient(135deg, #28a745, #4caf50);
+  color: white;
+  box-shadow: 0px 5px 10px rgba(40, 167, 69, 0.3);
+}
+
+form .btn-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Modify Button */
+form .btn-modify {
+  background: linear-gradient(135deg, #ffc107, #e67e22);
+  color: white;
+  box-shadow: 0px 5px 10px rgba(243, 156, 18, 0.3);
+}
+
+form .btn-modify:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(243, 156, 18, 0.4);
+}
+
+/* Form Labels */
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #495057;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  margin-left: 10%;
+  width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  form h2 {
+    font-size: 2rem;
+  }
+  
+
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+  }
+}

@@ -1,8 +1,10 @@
 {
   "name": "employee-management-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "build": "npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "joi": "^17.13.3",
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.3",
+    "mysql2": "^3.11.5"
   }
 }
